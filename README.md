@@ -2,9 +2,7 @@
 
 # 방화벽 마이그레이션을 도와줄 웹 서비스
 
-# FlowChart
-![FireMigrate_플로우차트](https://github.com/user-attachments/assets/f65f14be-6a68-4372-b8c9-745ac558fb75)
+![FireMigrate_플로우차트](https://github.com/user-attachments/assets/ec7486c6-4419-4c73-909c-09aa30c9b15a)
 
 
 
-Projects that can help with firewall migration

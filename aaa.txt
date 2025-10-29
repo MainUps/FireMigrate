@@ -1,3 +1,2 @@
 this is aaa.txt
-change
-
+delete !

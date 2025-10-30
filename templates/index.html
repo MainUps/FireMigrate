@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 <body>
-  <!-- ===== Header ===== -->
   <header>
     <div class="logo">
       <a href="{{ url_for('index') }}">
@@ -16,13 +15,12 @@
     </div>
     <nav>
       <a href="#">Guide</a>
-      <a href="#">Upload Section</a>
+      <a href="{{ url_for('upload') }}">Upload Section</a>
       <a href="#">Entry</a>
       <a href="#">Download Config</a>
     </nav>
   </header>
 
-  <!-- ===== Main ===== -->
   <main>
     <h1>How to Migrate Service</h1>
 
@@ -44,33 +42,30 @@
       </div>
     </section>
 
-    <!-- ===== Devices Section ===== -->
     <section class="devices">
       <div class="device">
         <h4>CISCO</h4>
         <h3>ASA</h3>
-        <img src="{{ url_for('static', filename='img/ASA.png') }}" alt="ASA Firewall" />
+        <img src="{{ url_for('static', filename='img/ASA.png') }}" alt="ASA" />
       </div>
       <div class="device">
         <h4>CISCO</h4>
         <h3>FTD</h3>
-        <img src="{{ url_for('static', filename='img/FTD.png') }}" alt="FTD Firewall" />
+        <img src="{{ url_for('static', filename='img/FTD.png') }}" alt="FTD" />
       </div>
       <div class="device">
         <h4>Fortinet</h4>
         <h3>Fortigate</h3>
-        <img src="{{ url_for('static', filename='img/Fortigate.png') }}" alt="Fortigate Firewall" />
+        <img src="{{ url_for('static', filename='img/Fortigate.png') }}" alt="Fortigate" />
       </div>
     </section>
 
-    <!-- ===== Upload Button ===== -->
     <div class="upload">
-      <button>UPLOAD</button>
+      <a href="{{ url_for('upload') }}"><button>UPLOAD</button></a>
       <p>Please Upload File</p>
     </div>
   </main>
 
-  <!-- ===== Footer ===== -->
   <footer>
     <p>© 2025 FireMigrate</p>
   </footer>

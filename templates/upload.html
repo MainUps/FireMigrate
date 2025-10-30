@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Config - FireMigrate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="{{ url_for('index') }}">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="FireMigrate Logo" />
+      </a>
+    </div>
+    <nav>
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('upload') }}">Upload Section</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Upload Configuration File</h1>
+
+    <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data" class="upload-form">
+      <input type="file" name="file" accept=".txt,.cfg" required />
+      <button type="submit">Upload</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 FireMigrate</p>
+  </footer>
+</body>
+</html>

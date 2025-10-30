@@ -91,17 +91,6 @@ h1 {
   text-align: center;
 }
 
-.device h4 {
-  font-size: 0.9rem;
-  color: #777;
-  letter-spacing: 0.5px;
-}
-
-.device h3 {
-  font-size: 1.5rem;
-  margin: 5px 0 15px;
-}
-
 .device img {
   width: 250px;
   height: auto;
@@ -116,12 +105,13 @@ h1 {
 }
 
 /* ===== Upload Section ===== */
-.upload {
+.upload-form {
   text-align: center;
   margin-top: 80px;
 }
 
-.upload button {
+.upload-btn {
+  display: inline-block;
   background-color: #00bfff;
   color: white;
   border: none;
@@ -130,16 +120,23 @@ h1 {
   font-size: 1.1rem;
   cursor: pointer;
   font-weight: 600;
+  transition: background-color 0.2s ease;
 }
 
-.upload button:hover {
+.upload-btn:hover {
   background-color: #009fd1;
 }
 
-.upload p {
+.upload-form p {
   color: #555;
   margin-top: 20px;
   font-weight: 500;
+}
+
+.upload-msg {
+  color: #009900;
+  font-weight: 600;
+  margin-top: 15px;
 }
 
 /* ===== Footer ===== */

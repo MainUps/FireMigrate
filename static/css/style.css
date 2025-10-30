@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+main {
+  text-align: center;
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 60px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 60px;
+}
+
+.step h2 {
+  font-size: 2rem;
+  color: #ccc;
+}
+
+.step h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.devices {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+.device img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.upload {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.upload button {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.upload button:hover {
+  background-color: #009fd1;
+}
+
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  border-top: 1px solid #eee;
+  color: #999;
+  font-size: 0.9rem;
+}
